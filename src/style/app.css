@@ -1,0 +1,163 @@
+/* styles in src/style directory are applied to the whole page */
+body {
+  background: #0147A7;
+  color: #fff;
+}
+
+a {
+  color: #03A9F4;
+  margin-bottom: 16px;
+}
+
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+events-list > div {
+  background: black;
+  height: 257px;
+  width: 302px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  /* overflow: hidden; */
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+events-list > div::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+events-list > div > span {
+  color: #9b9b9b;
+  align-self: flex-start;
+}
+
+event-preview > div {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+event-preview > div > div.content {
+  height: 100%;
+  width: 70%;
+  background: #231d29;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+event-preview > div > div.picture {
+  height: 100%;
+  flex-grow: 1;
+  background: #37273b;
+}
+event-preview > div > div.content > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+event-preview > div > div.content > div > span:nth-child(1) {
+  text-align: start;
+}
+event-preview > div > div.content > div > span:nth-child(2) {
+  color: #db9524
+}
+
+event > .container {
+  height: 151px;
+  width: 312px;
+  background: #281e2c;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+event > .container > .content {
+  height: 100%;
+  width: 100%;
+  background: #37283c;
+  /* https://codepen.io/btargac/pen/JGOGoj - to make it wavy - but not now ;) */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+event > .container > .content > .header {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+event > .container > .content > .header > .picture {
+  height: 58px;
+  width: 58px;
+  border: #605763 solid 1px;
+  border-radius: 4px;
+}
+event > .container > .content > .header > .caption {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+event > .container > .content > .header > .caption > span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+event > .container > .content > .header > .time {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* margin-left: 16px; */
+}
+event > .container > .content > .header > .time > span {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: #f5a623;
+}
+
+event > .container > .content > .main {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+event > .container > .content > .main > span {
+  color: #605763;
+  font-size: 12px;
+}
+event > .container > .content > .main > p {
+  margin-left: 8px;
+  font-size: 14px;
+}
