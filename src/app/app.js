@@ -18,7 +18,7 @@ let app = () => {
 
 class AppCtrl {
   constructor($scope, $state, $location) {
-    this.url = 'https://github.com/preboot/angular-webpack'
+    this.url = 'https://github.com/petrtopor/angJsTestTask4pellertech'
     $scope.$on('openEventDetails', (event, data) => {
       console.log('need to switch a state now!!!!; data === ', data)
       // $state.go('^')
